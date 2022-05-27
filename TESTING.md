@@ -13,6 +13,7 @@ Visit the deployed site: site link here
   * [JavaScript Validator](#JavaScript-Validator)
   * [Python Validator](#Python-Validator)
   * [Lighthouse](#Lighthouse)
+  * [WAVE Testing](#WAVE-Testing)
 * [MANUAL TESTING](#MANUAL-TESTING)
   * [Testing User Stories](#Testing-User-Stories)
   * [Full Testing](#Full-Testing)
@@ -21,9 +22,7 @@ Testing was ongoing throughout the entire build. I utilised Chrome developer too
 
 During development I made use of google developer tools to ensure everything was working correctly and to assist with troubleshooting when things were not working as expected.
 
-I utilised the console in the developer tools to work through small sections of JavaScript and ensure that the code was working, and also to troubleshoot where issues were.
-
-I have gone through each page using google chrome developer tools & Firefox inspector tool to ensure that each page is responsive on a variety of different screen sizes and devices.
+I have gone through each page using Google Chrome developer tools & Firefox inspector tool to ensure that each page is responsive on a variety of different screen sizes and devices.
 
 - - -
 
@@ -33,26 +32,19 @@ I have gone through each page using google chrome developer tools & Firefox insp
 
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
 
-* 
-
 - - -
 
 ### JavaScript Validator
 
 [jshint](https://jshint.com/) was used to validate the JavaScript.
 
-* 
-
 - - -
 
 ### Python Validator
 
-[PEP8]()was used to validate the python files.
-
-*
+[PEP8](http://pep8online.com/)was used to validate the python files.
 
 - - -
-
 
 ### Lighthouse
 
@@ -60,8 +52,13 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 ### Desktop Results
 
-
 ### Mobile Results
+
+- - -
+
+### WAVE Testing
+
+[WAVE](https://wave.webaim.org/) (Web Accessibility Evaluation Tool) allows developers to create content that is more accessible to users with disabilities. It does this by identifying accessibility and WGAC errors.
 
 - - -
 
@@ -103,12 +100,9 @@ Each device tested the site using the following browsers:
 * Safari
 * Firefox
 
-Additional testing was taken by friends and family on a variety of devices and screen sizes. 
-
-
-`Home Page`
+Additional testing was taken by friends and family on a variety of devices and screen sizes.
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-
-
+| `Navbar` |
+| --- | --- | --- | --- | --- |
