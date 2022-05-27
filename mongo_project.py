@@ -66,7 +66,7 @@ def get_record():
     if not doc:
         print("")
         print("Error! No results found.")
-    
+
     return doc
 
 
@@ -107,6 +107,18 @@ def add_record():
     # if data can't be inserted show error message
     except:
         print("Error accessing the database")
+
+
+def find_record():
+    """
+    find the records
+    """
+    doc = get_record()
+    if doc:
+        print("")
+        for k,v in doc.items():
+            if k != "_id":
+                print(k.capitalize() + ": " + v.capitalize())
 
 
 def main_loop():
