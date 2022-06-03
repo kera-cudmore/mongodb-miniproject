@@ -118,7 +118,7 @@ def find_record():
     doc = get_record()
     if doc:
         print("")
-        for k,v in doc.items():
+        for k, v in doc.items():
             if k != "_id":
                 print(k.capitalize() + ": " + v.capitalize())
 
@@ -127,14 +127,15 @@ def edit_record():
     """
     edit a record
     checks that the key is not _id as we don't want to change this
-    This will then display the current value for the key for users to see before editing
-    if the input is empty we will keep the original value, without updating the field
+    This will then display the current value for the key for users to see
+    before editing. If the input is empty we will keep the original value,
+    without updating the field
     """
     doc = get_record()
     if doc:
         update_doc = {}
         print("")
-        for k,v in doc.items():
+        for k, v in doc.items():
             if k != "_id":
                 update_doc[k] = input(k.capitalize() + " [" + v + "] > ")
 
@@ -150,6 +151,10 @@ def edit_record():
 
 
 def delete_record():
+    """
+    find a record using first and last name,
+    confirm if the user wants to delete
+    """
     doc = get_record()
     if doc:
         print("")

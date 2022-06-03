@@ -24,7 +24,6 @@ This project was created as part of the lessons on MongoDB and Python with the C
   * [Languages Used](#Languages-Used)
   * [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
 
-* [Deployment & Local Development](#Deployment-&-Local-Development)
   * [Local Development](#Local-Development)
     * [How to Fork](#How-to-Fork)
     * [How to Clone](#How-to-Clone)
@@ -128,9 +127,7 @@ PyMongo - A tool to allow us to be able to use the MongoDB with Python.
 
 ## Local Development
 
-### Local Development
-
-#### How to Fork
+### How to Fork
 
 To fork the repository:
 
@@ -138,7 +135,7 @@ To fork the repository:
 2. Go to the repository for this project, [mongodb-miniproject](https://github.com/kera-cudmore/mongodb-miniproject).
 3. Click the Fork button in the top right corner.
 
-#### How to Clone
+### How to Clone
 
 To clone the repository:
 
