@@ -1,15 +1,15 @@
 # MongoDB Mini Project
 
-This project was created as part of the lessons on MongoDB with the Code Institute.
-
-Add site responsive screenshot here
-
-Link to deployed site to go here
-
 ![GitHub last commit](https://img.shields.io/github/last-commit/kera-cudmore/mongodb-miniproject?style=for-the-badge)
 ![GitHub contributors](https://img.shields.io/github/contributors/kera-cudmore/mongodb-miniproject?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/kera-cudmore/mongodb-miniproject?style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/kera-cudmore/mongodb-miniproject?style=for-the-badge)
+
+This project was created as part of the lessons on MongoDB and Python with the Code Institute. The MongoDB mini project allows users full CRUD functionality with the database through the command line terminal using python.
+
+![Terminal mongo_project display output](documentation/mongo_project.png)
+
+- - -
 
 ## CONTENTS
 
@@ -17,19 +17,14 @@ Link to deployed site to go here
   * [User Stories](#User-Stories)
 
 * [Design](#Design)
-  * [Colour Scheme](#Colour-Scheme)
-  * [Typography](#Typography)
-  * [Imagery](#Imagery)
-  * [Wireframes](#Wireframes)
+  * [Database Schema](#Database-Schema)
   * [Features](#Features)
-  * [Accessibility](#Accessibility)
 
 * [Technologies Used](#Technologies-Used)
   * [Languages Used](#Languages-Used)
   * [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
 
 * [Deployment & Local Development](#Deployment-&-Local-Development)
-  * [Deployment](#Deployment)
   * [Local Development](#Local-Development)
     * [How to Fork](#How-to-Fork)
     * [How to Clone](#How-to-Clone)
@@ -38,9 +33,6 @@ Link to deployed site to go here
   
 * [Credits](#Credits)
   * [Code Used](#Code-Used)
-  * [Content](#Content)
-  * [Media](#Media)
-  * [Acknowledgments](#Acknowledgments)
 
 - - -
 
@@ -48,58 +40,67 @@ Link to deployed site to go here
 
 ### User Stories
 
-#### First Time Visitor Goals
-
-* As a first time user, I want the site to be easy to navigate.
-* As a first time user, I want to be able to add categories to store my tasks in.
-* As a first time user, I want to be able to save tasks I create in a category of my choice.
-
-#### Returning Visitor Goals
-
-* As a returning user, I want to be able to edit tasks.
-* As a returning user, I want to be able to edit categories.
-
-#### Frequent Visitor Goals
-
-* As a frequent user, I want to be able to delete tasks I no longer want.
-* As a frequent user, I want to be able to delete categories that I no longer need.
+* As a user, I want the menu to be easy to navigate.
+* As a user, I want to be able to create a new record in the database.
+* As a user, I want to be able to view records in the database.
+* As a user, I want to be able to edit records in the database.
+* As a user, I want to be able to delete records in the database.
 
 - - -
 
 ## Design
 
-### Colour Scheme
+### Database Schema
 
-Image of colour scheme to go here
+The database schema was created with [smartdraw](https://www.smartdraw.com/).
 
-### Typography
-
-Google Fonts was used to import the chosen fonts for use in the site.
-
-### Imagery
-
-### Wireframes
-
-Wireframes were created for mobile, tablet and desktop using ...
-
-Wireframes links/images to go here
+![Database Schema](documentation/erd.png)
 
 ### Features
 
-The website is comprised of …
+The application is comprised of a menu with 5 options.
 
-* All Pages on the website have:
+1. Add a record.
 
-* Future Implementations.
+   This menu option allows users to add a record to the database. Once option 1 has been selected, the user will be guided to input the following information: first name, last name, date of birth, gender, hair colour, occupation and nationality.
 
-### Accessibility
+   Once these fields have been entered, the user receives feedback to let them know that the document has been inserted into the database and then the menu options are displayed again.
 
-I have been mindful during coding to ensure that the website is as accessible friendly as possible. This has been have achieved by:
+   If there is an error with adding the record the user will be shown an error message letting them know that there was an error accessing the database.
 
-* Using semantic HTML.
-* Using descriptive alt attributes on images on the site.
-* Providing information for screen readers where there are icons used and no text.
-* Ensuring that there is a sufficient colour contrast throughout the site.
+   ![add record](documentation/add_record.png)
+
+2. Find a record by name.
+
+   This menu option allows users to find a record by inputting a name. Once option 2 has been selected the user will be prompted to enter the first name and then the last name of the record they are searching for.
+
+   If the record exists, the user will be shown the full record.
+
+   If there is an issue with finding the record, an error message will be displayed stating: Error! No results found. The menu is then displayed.
+
+   ![find a record](documentation/find_record.png)
+
+3. Edit a record.
+
+   This menu option allows users to edit a record that already exists in the database. Once option 3 has been selected the user will be prompted to enter a first and last name for the record they would like to edit.
+
+   The user is then taken through each attribute in the record - displaying the key and the current value of the key. The user may edit or press enter to keep the current value. Once completed the user will be shown a document updated message to let them know that the edit has been successful and then the menu options will be displayed.
+
+   If there is a problem, the user will be shown an error message letting them know there was an error accessing the database.
+
+   ![edit record](documentation/edit_record.png)
+
+4. Delete a record.
+
+   This menu option allows users to delete a record from the database. Once option 4 has been selected the user will be prompted to enter the first and last name of the record they would like to delete from the database. They will then be shown the full record for the person and they will be asked whether this is the document they wanted to delete.
+
+   If the user selects `y` they will be shown a message to let them know that the document has been deleted. If the user selects `n` they will be shown a message to let them know the document has not been deleted. If the user imputs any character other than a `y` or `n` they will be shown the message document not deleted. If there is an issue with deleting a record the user will be shown an error message stating: error accessing the database.
+
+   ![deleting a record](documentation/delete_record.png)
+
+5. Exit the menu.
+
+   If this option is selected the user is exited out of the mongo_project.py application.
 
 - - -
 
@@ -107,11 +108,9 @@ I have been mindful during coding to ensure that the website is as accessible fr
 
 ### Languages Used
 
-HTML, CSS, Javascript, Python
+Python
 
 ### Frameworks, Libraries & Programs Used
-
-Balsamiq - Used to create wireframes.
 
 Git - For version control.
 
@@ -119,31 +118,17 @@ Github - To save and store the files for the website.
 
 MongoDB - For the Database
 
-Google Fonts - To import the fonts used on the website.
+PyMongo - A tool to allow us to be able to use the MongoDB with Python.
 
-Font Awesome - For the iconography on the website.
+[smartdraw](https://www.smartdraw.com/) - To create the database schema.
 
-Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
-
-[Tiny PNG](https://tinypng.com/) To compress images.
-
-[Birme](https://www.birme.net/) To resize images and convert to webp format.
-
-[Favicon.io](https://favicon.io/) To create favicon.
-
-[Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+[Tiny PNG](https://tinypng.com/) To compress images used in the readme.
 
 [Shields.io](https://shields.io/) To add badges to the README
 
 - - -
 
-## Deployment & Local Development
-
-### Deployment
-
-The site is deployed using Heroku
-
-Add instructions on how to deploy here?
+## Local Development
 
 ### Local Development
 
@@ -177,7 +162,3 @@ Please see [testing.md](testing.md) for all testing performed
 ### Code Used
 
 This project was created as part of a walkthrough project with the Code Institute for a unit on MongoDB and python.
-
-### Content
-
-### Media
