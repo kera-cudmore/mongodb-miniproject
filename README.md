@@ -28,8 +28,6 @@ This project was created as part of the lessons on MongoDB and Python with the C
   * [Local Development](#Local-Development)
     * [How to Fork](#How-to-Fork)
     * [How to Clone](#How-to-Clone)
-
-* [Testing](#Testing)
   
 * [Credits](#Credits)
   * [Code Used](#Code-Used)
@@ -152,13 +150,8 @@ To clone the repository:
 
 - - -
 
-## Testing
-
-Please see [testing.md](testing.md) for all testing performed
-- - -
-
 ## Credits
 
 ### Code Used
 
-This project was created as part of a walkthrough project with the Code Institute for a unit on MongoDB and python.
+This project was created as part of a walkthrough project with the Code Institute for a unit on MongoDB and Python.
